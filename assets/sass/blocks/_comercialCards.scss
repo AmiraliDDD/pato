@@ -1,0 +1,44 @@
+.cards-container {
+    @include dflex(flex, column, center, center);
+    width: 100%;
+    padding: 5rem 0;
+
+    &__card {
+        width: 90%;
+        margin: $c-margin;
+        margin-bottom: 20px;
+        text-align: start;
+
+        img {
+            width: $full-width;
+            border-radius: $border_r;
+
+
+        }
+
+        a {
+            text-transform: uppercase;
+            color: $txt-color;
+            font-family: font2;
+        }
+
+        p{
+            color: $txt-color-secondary;
+        }
+
+        &__linkPrimary {
+            width: $full-width;
+            font-size: 22px;
+            letter-spacing: 2px;
+            font-weight: 500;
+            margin: 20px 0;
+            
+
+        }
+
+        &__linkSecondary {
+            font-size: .8rem;
+        }
+    }
+
+}

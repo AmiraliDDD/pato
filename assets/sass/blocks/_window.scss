@@ -1,0 +1,33 @@
+.window {
+    @include dflex(flex, column, center, center);
+    background-image: url("../images/bgwindow.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 165px;
+    padding-top: 135px;
+    @media (min-width:500px){
+        background-attachment: fixed;
+    }
+
+
+
+    &__txt {
+        font-family: italian;
+        color: $btn-color-primary;
+        font-size: 2rem;
+        font-weight: 600;
+        backdrop-filter: blur(1px);
+    }
+
+    &__h {
+        font-weight: bolder;
+        font-size: $txt-big;
+        letter-spacing: $txt-small;
+        text-transform: uppercase;
+        text-align: center;
+        color: $w-color;
+        margin: 0;
+    }
+
+}

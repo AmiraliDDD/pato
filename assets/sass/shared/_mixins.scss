@@ -1,0 +1,11 @@
+@mixin dflex($dis:flex , $dir:row,$justify:space-between, $align:center) {
+    display: $dis;
+    flex-direction: $dir;
+    justify-content: $justify;
+    align-items: $align;
+   }
+.upper{
+    text-transform: uppercase;
+}
+
+

@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    background-color: $bg-main;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+
+}
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: font1;
+    src: url("../fonts/Rough\ Battle.ttf");
+  }
+@font-face {
+    font-family: font2;
+    src: url(../fonts/JTUSjIg1_i6t8kCHKm459Wlhyw.ttf);
+}
+@font-face {
+    font-family: italian;
+    src: url(../fonts/italian.ttf);
+}

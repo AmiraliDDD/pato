@@ -1,0 +1,83 @@
+.reservation {
+    width: 90%;
+    margin: 2rem auto;
+
+
+    &__txtbox {
+        margin: 3rem auto;
+        @include dflex(flex, column, center, center);
+
+        &__title {
+            font-family: italian;
+            color: $border-color;
+            margin: $c-margin;
+            font-size: 3rem;
+            font-weight: bold;
+
+        }
+
+        &__txt {
+            
+            margin: $c-margin;
+            font-size: 3rem;
+            letter-spacing: .2rem;
+            font-family: font2;
+            font-weight: 600;
+
+        }
+
+
+
+
+        @media(min-width:768px) {
+            margin-top: 0;
+        }
+
+    }
+
+    &__form {
+
+        &__holder {
+            @include dflex(flex, column, center, flex-start);
+
+            select,
+            input:not(.reservation__form__holder__sub) {
+                display: block;
+                width: 100%;
+                padding: $pad-primary;
+                border-radius: $border_r;
+                border: 2px solid rgb(212, 212, 212);
+                margin-bottom: .5rem;
+
+
+            }
+
+            input:not(.reservation__form__holder__sub) {
+                background-color: $w-color;
+            }
+
+            select {
+                background-color: $bg-main;
+            }
+
+            input:not(.reservation__form__holder__sub):focus {
+                outline: 2px solid $border-color;
+            }
+
+            &__sub {
+                display: inline !important;
+                margin: 1rem auto;
+                padding: $pad-secondary;
+                border-radius: $border_r;
+                background-color: $bg-main;
+                border: 2px solid rgb(212, 212, 212);
+                outline: none;
+                background-color: $txt-color;
+                color: $w-color;
+                
+
+            }
+
+        }
+    }
+}

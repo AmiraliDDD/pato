@@ -1,0 +1,163 @@
+
+.slider {
+  
+  min-width: 320px;
+  background-image: url("../images/slide1-01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: $full-vh;
+  border-top: 5px solid $border-color;
+  position: relative;
+  top: 0;
+
+  &__menu {
+    width: 65%;
+    height: $full-vh;
+    background-color: $w-color;
+    visibility: hidden;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 6%;
+    font-family: font2;
+    @include dflex(flex, column, flex-start, flex-end);
+
+
+ 
+
+    &__links {
+      width: $full-width;
+      margin: 12% auto;
+
+      a {
+        display: block;
+        text-align: center;
+        margin-bottom: 6%;
+        font-size: .8rem;
+      }
+
+
+    }
+
+  }
+  i {
+    color: $txt-color;
+
+    cursor: pointer;
+  }
+  i:hover + aside{
+    visibility: visible;
+  }
+
+  &__header {
+    @include dflex(flex, row, space-between, center);
+    width: $full-width;
+    padding: $txt-small;
+    margin: 2rem auto;
+         
+    &__buttons{
+      display: none
+    }
+    
+
+    
+    @media(min-width:990px){
+    
+      &__buttons{
+        @include dflex(flex, row, space-between, center);
+        color: $w-color;
+        margin: 0 auto;
+        width: 56%;
+        font-size: 1.2rem;
+        font-weight: 300;
+        font-family: font2;
+        
+        
+   
+      }
+      
+     
+
+    }
+    @media(min-width:1330px){
+    width: 80%;
+    margin:  2rem auto;
+     
+      
+     
+
+    }
+ 
+
+    &__image {
+      width: 80px;
+      cursor: pointer;
+
+    }
+
+    &__navbar {
+      padding: $pad-primary;
+
+ 
+      i {
+        color: $txt-color;
+      
+        cursor: pointer;
+      }
+
+      @include dflex(flex, row, space-between, center);
+      width: $half-width;
+
+
+   @media(min-width:990px){
+    width: 20%;
+   }
+
+    }
+
+  }
+
+
+  &__section {
+    @include dflex(flex, column, center, center);
+    color: $w-color;
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    top: 40%;
+    right: 50%;
+    transform: translateX(50%);
+    
+
+    &__txt1 {
+
+
+      font-family: font1;
+      font-size: 50px;
+      line-height: 1.1;
+      margin: 0;
+
+
+    }
+
+    &__txt2 {
+      font-weight: bolder;
+      font-size: $txt-big;
+      letter-spacing: $txt-small;
+      text-transform: uppercase;
+      text-align: center;
+
+    }
+
+    &__btn {
+      color: $btn-color-primary;
+      font-weight: 100;
+      background-color: $bg-main;
+      border-radius: 10px;
+      padding: $pad-secondary;
+      // margin-top: 10%;
+    }
+  }
+
+
+}

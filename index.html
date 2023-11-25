@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css"
+        integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/hover.css">
+    <!-- <link rel="stylesheet" href="./assets/bootstrap/bootstrap-5.3.2-dist/css/bootstrap.css">
+    <script src="./assets/bootstrap/bootstrap-5.3.2-dist/js/bootstrap.js"></script> -->
+    <title>Pato</title>
+</head>
+
+<body>
+    <div class="slider">
+        <header class="slider__header">
+
+            <img class="slider__header__navbar__image" src="./assets/images/logo.png" alt="logo">
+            <div class="slider__header__buttons">
+                <a href="#">Home</a>
+                <a href="#">menu</a>
+                <a href="#">reservation</a>
+                <a href="#">gallery</a>
+                <a href="#">about</a>
+                <a href="#">blog</a>
+                <a href="#">contact</a>
+            </div>
+            <nav class="slider__header__navbar">
+
+
+
+
+                <!-- <i class="fa fa-tripadvisor" style="color:white"></i> -->
+                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-bars-staggered" style="color: #ffffff;"></i>
+
+            </nav>
+            <aside class="slider__menu">
+                <i class="fa-solid fa-xmark" style="color: #000000;"></i>
+                <div class="slider__menu__links">
+                    <a href="#">Home</a>
+                    <a href="#">menu</a>
+                    <a href="#">gallery</a>
+                    <a href="#">about</a>
+                    <a href="#">blog</a>
+                    <a href="#">contact</a>
+
+                </div>
+            </aside>
+        </header>
+        <section class="slider__section">
+            <p class="slider__section__txt1">welcome to</p>
+            <p class="slider__section__txt2">Pato place</p>
+            <a href="#" class="slider__section__btn hvr-shutter-out-horizontal">Look Menu</a>
+
+        </section>
+    </div>
+    <div class="italian">
+        <div class="italian__container">
+            <div class="italian__container__txtbox">
+                <p class="italian__container__txtbox__title">Italian Restaurent</p>
+                <p class="italian__container__txtbox__txt">WELCOME</p>
+                <p class="italian__container__txtbox__paragraph">Donec quis lorem nulla. Nunc eu odio mi. Morbi nec
+                    lobortis est. Sed fringilla, nunc sed
+                    imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque. </p>
+                <a href="#">our story</a>
+            </div>
+
+            <div class="italian__container__image">
+
+                <img src="./assets/images/italianfood.jpg" alt="">
+
+            </div>
+        </div>
+    </div>
+    <section class="window">
+        <span class="window__txt">Discover</span>
+        <h3 class="window__h">PATO PLACE</h3>
+    </section>
+
+
+    <section class="cards-container">
+        <div class="cards-container__card">
+            <img src="./assets/images/intro-01.jpg" alt="restaurent-photo">
+            <a href="#" class="cards-container__card__linkPrimary">romantic Restaurent</a>
+            <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+            <a href="#" class="cards-container__card__linkSecondary">learn more</a>
+        </div>
+
+        <div class="cards-container__card">
+            <img src="./assets/images/intro-02.jpg" alt="restaurent-photo">
+            <a href="#" class="cards-container__card__linkPrimary">Delicious food</a>
+            <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+            <a href="#" class="cards-container__card__linkSecondary">learn more</a>
+        </div>
+
+        <div class="cards-container__card">
+            <img src="./assets/images/intro-04.jpg" alt="restaurent-photo">
+            <a href="#" class="cards-container__card__linkPrimary">red wines you love</a>
+            <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+            <a href="#" class="cards-container__card__linkSecondary">learn more</a>
+        </div>
+
+
+    </section>
+    <section class="menu-container ">
+        <div class="menu-container__txtbox"></div>
+        <div class="menu-container__cards-container ">
+            <div class="left">
+                <div class="top">
+                    <div class="top-left "><img src="./assets/images/our-menu-01.jpg" alt=""></div>
+                    <div class="top-right "><img src="./assets/images/our-menu-05.jpg" alt=""></div>
+                </div>
+                <div class="bottom "><img src="./assets/images/our-menu-3.jpg" alt=""></div>
+            </div>
+
+
+            <div class="right">
+                <div class="element "><img src="./assets/images/our-menu-04.jpg" alt=""></div>
+                <div class="element "><img src="./assets/images/our-menu-5.jpg" alt=""></div>
+                <div class="element "><img src="./assets/images/our-menu-6.jpg" alt=""></div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <section class="reservation">
+        <div class="reservation__txtbox">
+            <p class="reservation__txtbox__title">Reservation</p>
+            <p class="reservation__txtbox__txt">Book table</p>
+        </div>
+        <form class="reservation__form" action="harchi.php">
+            <div class="reservation__form__holder">
+                <label for="date">Date</label>
+                <input type="date" name="date" value="date" id="date">
+                <label for="time">Time</label>
+                <select name="time" id="time">
+                    <option value="none">select time:</option>
+                    <option value="16">16</option>
+                    <option value="16:30">16:30</option>
+                    <option value="17">17</option>
+                    <option value="17:30">17:30</option>
+                    <option value="18">18</option>
+                </select>
+                <label for="people">People</label>
+                <select name="quantity" id="people">
+                    <option value="1 ">1 person</option>
+                    <option value="2 ">2 people</option>
+                    <option value="3 ">3 people</option>
+                    <option value="4 ">4 people</option>
+                    <option value="5 ">5 people</option>
+                    <option value="more">more</option>
+                </select>
+
+                <label for="name">Name</label>
+                <input id="name" type="text" name="fname">
+
+                <label for="phnumber">phone</label>
+                <input id="phnumber" type="tel" name="phone">
+                <label for="email">email</label>
+                <input id="email" type="email">
+                <input class="reservation__form__holder__sub" type="submit" value="Booktable">
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
+<!-- <div class="menu-container__cards-container__card">
+    <img src="" alt="">
+    <a href=""></a>
+   </div>  -->
