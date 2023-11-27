@@ -2,6 +2,9 @@
     @include dflex(flex, column, center, center);
     width: 100%;
     padding: 5rem 0;
+    @media (min-width:768px){
+        align-items: flex-start;
+    }
     
 
     &__card {

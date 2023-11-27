@@ -283,6 +283,11 @@ a {
   width: 100%;
   padding: 5rem 0;
 }
+@media (min-width: 768px) {
+  .cards-container {
+    align-items: flex-start;
+  }
+}
 .cards-container__card {
   width: 90%;
   margin: 0 auto;
@@ -430,6 +435,7 @@ a {
 }
 .menu-container__cards-container .left .bottom {
   height: calc(30% - 20px);
+  width: 100%;
 }
 .menu-container__cards-container .right {
   flex: 1;
@@ -447,12 +453,43 @@ a {
   width: 90%;
   margin: 2rem auto;
 }
+@media (min-width: 992px) {
+  .reservation {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+}
+.reservation__image {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 390px;
+  max-height: 390px;
+  border-radius: 10px;
+}
+@media (min-width: 992px) {
+  .reservation__image {
+    transform: translateY(50%);
+    max-width: 500px;
+    max-height: 500px;
+  }
+}
+.reservation__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
 .reservation__txtbox {
   margin: 3rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 992px) {
+  .reservation__txtbox {
+    margin: 0;
+  }
 }
 .reservation__txtbox__title {
   font-family: italian;
@@ -473,14 +510,23 @@ a {
     margin-top: 0;
   }
 }
-.reservation__form__holder {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+@media (min-width: 992px) {
+  .reservation__form {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
 }
-.reservation__form__holder select,
-.reservation__form__holder input:not(.reservation__form__holder__sub) {
+@media (min-width: 768px) {
+  .reservation__form__holder {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+    position: relative;
+    top: 0;
+  }
+}
+.reservation__form__holder select, .reservation__form__holder input:not(.reservation__form__holder__sub) {
   display: block;
   width: 100%;
   padding: 16px 12px;
@@ -498,7 +544,7 @@ a {
   outline: 2px solid rgb(214, 7, 7);
 }
 .reservation__form__holder__sub {
-  display: inline !important;
+  display: block;
   margin: 1rem auto;
   padding: 8px 22px;
   border-radius: 10px;
@@ -507,4 +553,12 @@ a {
   outline: none;
   background-color: rgb(20, 19, 19);
   color: #f3eded;
+}
+@media (min-width: 768px) {
+  .reservation__form__holder__sub {
+    position: relative;
+    left: 40%;
+    bottom: 0;
+    transform: translateX(50%);
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -104,7 +104,7 @@
             <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
             <a href="#" class="cards-container__card__linkSecondary">learn more</a>
         </div>
-        
+
 
 
     </section>
@@ -131,43 +131,55 @@
 
     </section>
     <section class="reservation">
+       
         <div class="reservation__txtbox">
             <p class="reservation__txtbox__title">Reservation</p>
             <p class="reservation__txtbox__txt">Book table</p>
         </div>
         <form class="reservation__form" action="harchi.php">
             <div class="reservation__form__holder">
-                <label for="date">Date</label>
-                <input type="date" name="date" value="date" id="date">
-                <label for="time">Time</label>
-                <select name="time" id="time">
-                    <option value="none">select time:</option>
-                    <option value="16">16</option>
-                    <option value="16:30">16:30</option>
-                    <option value="17">17</option>
-                    <option value="17:30">17:30</option>
-                    <option value="18">18</option>
-                </select>
-                <label for="people">People</label>
-                <select name="quantity" id="people">
-                    <option value="1 ">1 person</option>
-                    <option value="2 ">2 people</option>
-                    <option value="3 ">3 people</option>
-                    <option value="4 ">4 people</option>
-                    <option value="5 ">5 people</option>
-                    <option value="more">more</option>
-                </select>
+                <div><label for="date">Date</label>
+                    <input type="date" name="date" value="date" id="date">
+                </div>
 
-                <label for="name">Name</label>
-                <input id="name" type="text" name="fname">
+                <div><label for="time">Time</label>
+                    <select name="time" id="time">
+                        <option value="none">select time:</option>
+                        <option value="16">16</option>
+                        <option value="16:30">16:30</option>
+                        <option value="17">17</option>
+                        <option value="17:30">17:30</option>
+                        <option value="18">18</option>
+                    </select>
+                </div>
+                <div><label for="people">People</label>
+                    <select name="quantity" id="people">
+                        <option value="1 ">1 person</option>
+                        <option value="2 ">2 people</option>
+                        <option value="3 ">3 people</option>
+                        <option value="4 ">4 people</option>
+                        <option value="5 ">5 people</option>
+                        <option value="more">more</option>
+                    </select>
+                </div>
 
-                <label for="phnumber">phone</label>
-                <input id="phnumber" type="tel" name="phone">
-                <label for="email">email</label>
-                <input id="email" type="email">
+                <div> <label for="name">Name</label>
+                    <input id="name" type="text" name="fname">
+                </div>
+
+                <div><label for="phnumber">phone</label>
+                    <input id="phnumber" type="tel" name="phone">
+                </div>
+                <div> <label for="email">email</label>
+                    <input id="email" type="email">
+                </div>
                 <input class="reservation__form__holder__sub" type="submit" value="Booktable">
             </div>
         </form>
+    </div>
+        <div class="reservation__image">
+            <img src="./assets/images/booking-01.jpg.webp" alt="">
+       
     </section>
 </body>
 
