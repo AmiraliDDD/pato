@@ -2,6 +2,7 @@
     @include dflex(flex, column, center, center);
     width: 100%;
     padding: 5rem 0;
+    
 
     &__card {
         width: 90%;
@@ -39,6 +40,15 @@
         &__linkSecondary {
             font-size: .8rem;
         }
+    @media (min-width:768px){
+        width: 30%;
+    }
+    }
+    @media (min-width:768px){
+        margin: $c-margin;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1200px;
     }
 
 }

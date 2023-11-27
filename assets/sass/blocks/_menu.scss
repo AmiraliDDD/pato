@@ -1,71 +1,106 @@
-.menu-container{
+.menu-container {
     @include dflex(flex, column, center, center);
-    // &__txtbox{
 
-    // }
-    &__cards-container{
-        width: 70%;
+    &__cards-container {
+        @media(min-width:768px) {
+            width: 70%;
+            height: 700px;
+            gap: 40px;
+            border-radius: 15%;
+            @include dflex(flex, row, center, center);
+        }
+
+        width: 90%;
         margin: $c-margin;
-        height: 700px;
-        gap: 40px;
-        border-radius: 15%;
-        div{
+
+        div {
             border-radius: 10px;
             overflow: hidden;
+            margin-bottom: 2rem;
+
+            @media(min-width:768px) {
+                margin-bottom: 0;
+            }
         }
-        @include dflex(flex, row, center, center);
+
+        @include dflex(flex, column, space-between, center);
         overflow: hidden;
         margin-bottom: 5rem;
-        img{
-            
+
+        img {
+
             width: 100%;
             height: 100%;
             border-radius: 10px;
             transition: .3s;
-            
+
         }
-        img:hover{
+
+        img:hover {
             transform: scale(1.1);
             transition: .3s;
         }
-       .left{
-        height: 100%;
-        // width: calc(70% - 10px);
-        @include dflex(flex, column, space-between, center);
-        flex: 2.5;
-        .top{
-            height: calc(70% - 20px);
-            width: $full-width;
-            @include dflex(flex, row, space-between, center);
-            gap: 40px;
-            .top-left{
-                width: 50%;
-                height : 100%;
+
+        .left {
+            @media(min-width:768px) {
+                width: calc(70% - 10px);
+            }
+
+            height: 100%;
+            @include dflex(flex, column, space-between, center);
+            flex: 2.5;
+
+            .top {
+                @media(min-width:574px) {
+                    @include dflex(flex, row, space-between, center);
+                    gap: 20px;
+                }
+
+                @media(min-width:768px) {
+                    height: calc(70% - 20px);
+                    width: $full-width;
+                    @include dflex(flex, row, space-between, center);
+                    gap: 40px;
+                }
+
+                @include dflex(flex, column, space-between, center);
+
+                .top-left {
+                    height: 100%;
+
+                    @media(min-width:768px) {
+                        width: 50%;
+                    }
+                }
+
+                .top-right {
+                    height: 100%;
+
+                    @media(min-width:768px) {
+                        width: 50%;
+                    }
+
+                }
+
 
             }
-            .top-right{
-                width: 50% ;
-                height: 100%;
+
+            .bottom {
+                height: calc(30% - 20px);
+
             }
-            
-            
-            
+
         }
-        .bottom{
-            width: $full-width;
-            height: calc(30% - 20px);
-            
+
+        .right {
+            flex: 1;
+            height: 100%;
+            @include dflex(flex, column, space-between, center);
+
+            .element {
+                height: 30%;
+            }
         }
-        
-       }
-       .right{
-        flex: 1;
-        height: 100%;
-        @include dflex(flex, column, space-between, center);
-        .element{
-            height:30%;
-            width: 100%;
-        }
-       }
+
     }
 }
