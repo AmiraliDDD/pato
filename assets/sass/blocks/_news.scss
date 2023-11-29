@@ -1,8 +1,8 @@
-.cards-container {
-    background-color:$bg-main;
+.news-container {
     @include dflex(flex, column, center, center);
     width: 100%;
     padding: 5rem 0;
+    background-color: $w-color;
     @media (min-width:768px){
         align-items: flex-start;
     }
@@ -13,7 +13,9 @@
         margin: $c-margin;
         margin-bottom: 20px;
         text-align: start;
+    // added
         max-width: 360px;
+       
 
         img {
             width: $full-width;

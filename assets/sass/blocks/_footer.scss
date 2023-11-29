@@ -1,0 +1,68 @@
+.footer {
+    background-color: $bg-contrast ;
+    @include dflex(flex, column, center, flex-start);
+    color: $txt-color-secondary;
+
+    &__element {
+        width: 90%;
+        margin: $c-margin;
+
+        &__header {
+            font-weight: 500;
+            font-size: 1.3rem;
+            color: $w-color;
+            text-transform: uppercase;
+            font-family: font2;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            i {
+                margin: .5rem 1rem;
+                margin-left: 0;
+            }
+
+
+        }
+
+        &__imageBox {
+            width: 90%;
+            margin: $c-margin;
+            margin-bottom: 2rem;
+            @include dflex(flex, column, center, center);
+            gap: .5rem;
+
+
+            &__row {
+                @include dflex(flex, row, space-between, center);
+
+                div {
+                    width: calc(25% - .5rem);
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+
+
+        }
+    }
+
+    &__bottom {
+        background-color: $bg-third;
+        margin: $c-margin;
+        width: 100%;
+        padding: 2rem 5%;
+        display: flex;
+        justify-content: space-between;
+
+        i {
+            margin-right: .5rem;
+        }
+    }
+}
