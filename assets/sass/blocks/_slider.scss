@@ -5,7 +5,7 @@
   background-image: url("../images/slide1-01.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: $full-vh;
+  min-height: $full-vh;
   border-top: 5px solid $border-color;
   position: relative;
   top: 0;
@@ -96,6 +96,9 @@
     }
 
     &__navbar {
+      @media(min-width:768px){
+        width: 10%;
+      }
       padding: $pad-primary;
 
  
@@ -103,6 +106,13 @@
         color: $txt-color;
       
         cursor: pointer;
+      
+
+      }
+      i[class="fa-solid fa-bars-staggered"]{
+        @media(min-width:768px){
+          display: none;
+        }
       }
 
       @include dflex(flex, row, space-between, center);
@@ -123,10 +133,8 @@
     color: $w-color;
     width: 80%;
     margin: 0 auto;
-    position: absolute;
-    top: 40%;
-    right: 50%;
-    transform: translateX(50%);
+    margin: $c-margin;
+    margin-top: 15%;
     
 
     &__txt1 {

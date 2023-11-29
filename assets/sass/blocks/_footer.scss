@@ -3,9 +3,20 @@
     @include dflex(flex, column, center, flex-start);
     color: $txt-color-secondary;
 
+    @media(min-width:768px) {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0 10%;
+        margin: $c-margin;
+
+    }
+
     &__element {
         width: 90%;
         margin: $c-margin;
+        @media(min-width:768px){
+            width: 30%;
+        }
 
         &__header {
             font-weight: 500;
@@ -53,16 +64,24 @@
         }
     }
 
-    &__bottom {
-        background-color: $bg-third;
-        margin: $c-margin;
-        width: 100%;
-        padding: 2rem 5%;
-        display: flex;
-        justify-content: space-between;
 
-        i {
-            margin-right: .5rem;
-        }
+}
+
+.footer_bottom {
+    color: $w-color;
+    background-color: $bg-third;
+    margin: $c-margin;
+    width: 100%;
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: space-between;
+
+    i {
+        margin-right: .5rem;
     }
+
+ &__graytxt{
+    color: $txt-color-secondary;
+ }
+
 }

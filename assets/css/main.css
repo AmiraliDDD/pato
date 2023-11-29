@@ -34,7 +34,7 @@ a {
   background-image: url("../images/slide1-01.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   border-top: 5px solid rgb(214, 7, 7);
   position: relative;
   top: 0;
@@ -115,9 +115,19 @@ a {
   align-items: center;
   width: 50%;
 }
+@media (min-width: 768px) {
+  .slider__header__navbar {
+    width: 10%;
+  }
+}
 .slider__header__navbar i {
   color: rgb(20, 19, 19);
   cursor: pointer;
+}
+@media (min-width: 768px) {
+  .slider__header__navbar i[class="fa-solid fa-bars-staggered"] {
+    display: none;
+  }
 }
 @media (min-width: 990px) {
   .slider__header__navbar {
@@ -132,10 +142,8 @@ a {
   color: #f3eded;
   width: 80%;
   margin: 0 auto;
-  position: absolute;
-  top: 40%;
-  right: 50%;
-  transform: translateX(50%);
+  margin: 0 auto;
+  margin-top: 15%;
 }
 .slider__section__txt1 {
   font-family: font1;
@@ -628,9 +636,22 @@ a {
   align-items: flex-start;
   color: rgb(147, 143, 143);
 }
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0 10%;
+    margin: 0 auto;
+  }
+}
 .footer__element {
   width: 90%;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .footer__element {
+    width: 30%;
+  }
 }
 .footer__element__header {
   font-weight: 500;
@@ -670,7 +691,9 @@ a {
   width: 100%;
   height: 100%;
 }
-.footer__bottom {
+
+.footer_bottom {
+  color: #f3eded;
   background-color: #111111;
   margin: 0 auto;
   width: 100%;
@@ -678,6 +701,9 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.footer__bottom i {
+.footer_bottom i {
   margin-right: 0.5rem;
+}
+.footer_bottom__graytxt {
+  color: rgb(147, 143, 143);
 }/*# sourceMappingURL=main.css.map */
