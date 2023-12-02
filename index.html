@@ -13,6 +13,8 @@
     <!-- <link rel="stylesheet" href="./assets/bootstrap/bootstrap-5.3.2-dist/css/bootstrap.css">
     <script src="./assets/bootstrap/bootstrap-5.3.2-dist/js/bootstrap.js"></script> -->
     <link rel="icon" type="favicon" href="./assets/images/favicon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Pato</title>
 </head>
 
@@ -41,7 +43,7 @@
                 <i class="fa-solid fa-bars-staggered" style="color: #ffffff;"></i>
 
             </nav>
-            <aside class="slider__menu">
+            <!-- <aside class="slider__menu">
                 <i class="fa-solid fa-xmark" style="color: #000000;"></i>
                 <div class="slider__menu__links">
                     <a href="#">Home</a>
@@ -52,7 +54,7 @@
                     <a href="#">contact</a>
 
                 </div>
-            </aside>
+            </aside> -->
         </header>
         <section class="slider__section">
             <p class="slider__section__txt1">welcome to</p>
@@ -72,7 +74,7 @@
                 <a href="#">our story</a>
             </div>
 
-            <div class="italian__container__image">
+            <div class="italian__container__image" data-aos="flip-right">
 
                 <img src="./assets/images/italianfood.jpg" alt="">
 
@@ -86,21 +88,21 @@
 
 
     <section class="cards-container">
-        <div class="cards-container__card">
+        <div class="cards-container__card " data-aos="fade-up">
             <img src="./assets/images/intro-01.jpg" alt="restaurent-photo">
             <a href="#" class="cards-container__card__linkPrimary">romantic Restaurent</a>
             <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
             <a href="#" class="cards-container__card__linkSecondary">learn more</a>
         </div>
 
-        <div class="cards-container__card">
+        <div class="cards-container__card" data-aos="fade-up">
             <img src="./assets/images/intro-02.jpg" alt="restaurent-photo">
             <a href="#" class="cards-container__card__linkPrimary">Delicious food</a>
             <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
             <a href="#" class="cards-container__card__linkSecondary">learn more</a>
         </div>
 
-        <div class="cards-container__card">
+        <div class="cards-container__card" data-aos="fade-up">
             <img src="./assets/images/intro-04.jpg" alt="restaurent-photo">
             <a href="#" class="cards-container__card__linkPrimary">red wines you love</a>
             <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
@@ -175,31 +177,31 @@
                 <div> <label for="email">email</label>
                     <input id="email" type="email">
                 </div>
-                <input class="reservation__form__holder__sub" type="submit" value="Booktable">
+                <input class="reservation__form__holder__sub hvr-buzz" type="submit" value="Booktable">
             </div>
         </form>
         </div>
-        <div class="reservation__image">
+        <div class="reservation__image" >
             <img src="./assets/images/booking-01.jpg.webp" alt="">
 
     </section>
     <!-- news    -->
     <section class="news-container">
-        <div class="news-container__card">
+        <div class="news-container__card" data-aos="fade-up">
             <img src="./assets/images/blog-01.jpg" alt="restaurent-photo">
             <a href="#" class="news-container__card__linkPrimary">best places for wine</a>
             <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
             <a href="#" class="news-container__card__linkSecondary">continue reading</a>
         </div>
 
-        <div class="news-container__card">
+        <div class="news-container__card" data-aos="fade-up">
             <img src="./assets/images/blog-02.jpg" alt="restaurent-photo">
             <a href="#" class="news-container__card__linkPrimary">eggs and cheese</a>
             <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
             <a href="#" class="news-container__card__linkSecondary">continue reading</a>
         </div>
 
-        <div class="news-container__card">
+        <div class="news-container__card" data-aos="fade-up" >
             <img src="./assets/images/blog-03.jpg" alt="restaurent-photo">
             <a href="#" class="news-container__card__linkPrimary">style the wedding party</a>
             <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
@@ -280,7 +282,9 @@
     </div>
 
 
-
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
