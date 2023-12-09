@@ -1,0 +1,164 @@
+.reservation2 {
+    width: 60%;
+    margin: 2rem auto;
+ 
+  
+    &__image{
+        @media(min-width: 992px){
+            transform: translateY(50%);
+         max-width: 500px;
+         max-height: 500px;
+        }
+        margin: $c-margin;
+        width: 90%;
+        max-width: 390px;
+        max-height: 390px;
+        border-radius: $border_r;
+        img{
+            width: $full-width;
+            height: $full-width;
+            border-radius: $border_r;
+        }
+
+    }
+
+
+    &__txtbox {
+        margin: 3rem auto;
+        @include dflex(flex, column, center, center);
+
+        @media(min-width: 992px){
+        margin: 0;
+        }
+
+
+        &__title {
+            font-family: italian;
+            color: $border-color;
+            margin: $c-margin;
+            font-size: 3rem;
+            font-weight: bold;
+
+        }
+
+        &__txt {
+            
+            margin: $c-margin;
+            font-size: 3rem;
+            letter-spacing: .2rem;
+            font-family: font2;
+            font-weight: 600;
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+
+        }
+
+
+
+
+        @media(min-width:768px) {
+            margin-top: 0;
+        }
+
+    }
+
+    &__form {
+        @media(min-width: 992px){
+            grid-row: 2/3;
+            grid-column: 1/2;
+        }
+      
+
+        &__holder {
+       
+
+            @media (min-width:768px){
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(2,1fr);
+                grid-gap: 1rem;
+                position: relative;
+                top: 0;
+            }
+
+    
+
+            select,input:not(.reservation2__form__holder__sub) {
+                display: block;
+                width: 100%;
+                padding: $pad-primary;
+                border-radius: $border_r;
+                border: 2px solid rgb(212, 212, 212);
+                margin-bottom: .5rem;
+
+
+            }
+
+            input:not(.reservation2__form__holder__sub) {
+                background-color: $w-color;
+            }
+
+            select {
+                background-color: $bg-main;
+            }
+
+            input:not(.reservation2__form__holder__sub):focus {
+                outline: 2px solid $border-color;
+            }
+
+            &__sub {
+                display: block;
+                margin: 1rem auto;
+                padding: $pad-secondary;
+                border-radius: $border_r;
+                background-color: $bg-main;
+                border: 2px solid rgb(212, 212, 212);
+                outline: none;
+                background-color: $txt-color;
+                color: $w-color;
+                cursor: pointer;
+            @media(min-width:768px){
+                grid-column: 2/3;
+            }
+                
+
+            }
+
+        }
+    }
+    &__info{
+        margin-top: 3rem;
+        font-family: font2;
+        @include dflex(flex, column, center, flex-start);
+        @media(min-width:768px){
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 10%;
+        }
+        h4{
+            letter-spacing: .3rem;
+            font-weight: 500;
+            font-size: 22px;
+            color: $txt-color;
+        }
+        p{
+            color: #757373;;
+        }
+        &__left{
+            @media(min-width:768px){
+                width: 45%;
+            }
+          
+           
+
+        }
+        &__right{
+            @media(min-width:768px){
+                width: 45%;
+            }
+          
+            
+
+        }
+    }
+}
