@@ -6,7 +6,7 @@
             width: 70%;
             height: 700px;
             gap: 40px;
-            border-radius: 15%;
+            border-radius: 10px;
             @include dflex(flex, row, center, center);
         }
 
@@ -96,7 +96,7 @@
         .right {
             flex: 1;
             height: 100%;
-            @include dflex(flex, column, space-between, center);
+            @include dflex(flex, column, space-between, flex-start);
 
             .element {
                 height: 30%;
