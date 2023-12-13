@@ -1,0 +1,68 @@
+.menu-container {
+    font-family: font2;
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin: 3rem auto;
+    @media(min-width:1200px){
+        @include dflex(flex, row, space-between, flex-start);
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    p {
+        color: $txt-color-secondary;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    p:hover{
+        color: $border-color;
+    }
+
+    h3 {
+        font-family: font2;
+        font-weight: 450;
+        font-size: 1.5rem;
+        letter-spacing: .2rem
+    }
+
+    @include dflex(flex, column, center, flex-start);
+    width: 90%;
+    // margin: $c-margin;
+
+    &__starters {
+
+        &__element {
+            margin-bottom: 2rem;
+            @include dflex(flex, column, center, flex-start);
+
+            &__namePrice {
+                @media(min-width:576px) {
+                    display: flex;
+                    align-items: flex-start;
+                }
+
+                &__line-pattern {
+                    margin: 0 10px;
+                    display: none;
+
+                    @media (min-width: 540px) {
+                        display: flex;
+                        flex: 1;
+                    }
+                }
+
+                &__price {
+                    font-weight: 300;
+                    font-size: 1.22rem;
+                }
+            }
+
+            &__detail{
+                font-size: .8rem;
+            }
+        }
+
+
+
+    }
+}

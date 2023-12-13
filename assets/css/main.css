@@ -202,7 +202,7 @@ a {
   font-weight: 600;
 }
 .italian__container__txtbox__paragraph {
-  color: rgb(147, 143, 143);
+  color: rgb(109, 109, 109);
 }
 @media (min-width: 768px) {
   .italian__container__txtbox {
@@ -305,7 +305,7 @@ a {
   font-family: font2;
 }
 .cards-container__card p {
-  color: rgb(147, 143, 143);
+  color: rgb(109, 109, 109);
 }
 .cards-container__card__linkPrimary {
   width: 100%;
@@ -595,7 +595,7 @@ a {
   font-family: font2;
 }
 .news-container__card p {
-  color: rgb(147, 143, 143);
+  color: rgb(109, 109, 109);
 }
 .news-container__card__linkPrimary {
   width: 100%;
@@ -626,7 +626,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  color: rgb(147, 143, 143);
+  color: rgb(109, 109, 109);
 }
 @media (min-width: 768px) {
   .footer {
@@ -697,18 +697,23 @@ a {
   margin-right: 0.5rem;
 }
 .footer_bottom__graytxt {
-  color: rgb(147, 143, 143);
+  color: rgb(109, 109, 109);
 }
 
 .slider2 {
-  min-width: 320px;
   background-image: url(../images/bg-title-page-02.jpg);
+  min-width: 320px;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 55vh;
+  height: 100vh;
   border-top: 5px solid rgb(214, 7, 7);
   position: relative;
   top: 0;
+}
+@media (min-width: 768px) {
+  .slider2 {
+    max-height: 60vh;
+  }
 }
 .slider2__links {
   width: 100%;
@@ -803,24 +808,18 @@ a {
   align-items: center;
   color: #f3eded;
   width: 80%;
-  margin: 0 auto;
-  margin: 0 auto;
-  margin-top: 15%;
-}
-.slider2__section__txt1 {
+  margin: 250px auto;
   font-family: font2;
-  font-size: 50px;
+  font-size: 35px;
   font-weight: 800;
   line-height: 1.1;
-  margin-bottom: 20%;
   letter-spacing: 0.1rem;
 }
-.slider2__section__txt2 {
-  font-weight: bolder;
-  font-size: 3rem;
-  letter-spacing: 0.5rem;
-  text-transform: uppercase;
-  text-align: center;
+@media (min-width: 768px) {
+  .slider2__section {
+    font-size: 55px;
+    margin: 0 auto;
+  }
 }
 
 .reservation2 {
@@ -962,4 +961,70 @@ a {
   .reservation2__info__right {
     width: 45%;
   }
+}
+
+.menu-container {
+  font-family: font2;
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+}
+@media (min-width: 1200px) {
+  .menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+.menu-container p {
+  color: rgb(109, 109, 109);
+  margin: 0;
+  text-transform: uppercase;
+}
+.menu-container p:hover {
+  color: rgb(214, 7, 7);
+}
+.menu-container h3 {
+  font-family: font2;
+  font-weight: 450;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+.menu-container__starters__element {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media (min-width: 576px) {
+  .menu-container__starters__element__namePrice {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+.menu-container__starters__element__namePrice__line-pattern {
+  margin: 0 10px;
+  display: none;
+}
+@media (min-width: 540px) {
+  .menu-container__starters__element__namePrice__line-pattern {
+    display: flex;
+    flex: 1;
+  }
+}
+.menu-container__starters__element__namePrice__price {
+  font-weight: 300;
+  font-size: 1.22rem;
+}
+.menu-container__starters__element__detail {
+  font-size: 0.8rem;
 }/*# sourceMappingURL=main.css.map */
