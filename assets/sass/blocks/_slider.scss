@@ -1,6 +1,5 @@
-
 .slider {
-  
+
   min-width: 320px;
   background-image: url("../images/slide1-01.jpg");
   background-repeat: no-repeat;
@@ -10,36 +9,25 @@
   position: relative;
   top: 0;
 
-  // &__menu {
-  //   width: 65%;
-  //   height: $full-vh;
-  //   background-color: $w-color;
-  //   visibility: hidden;
-  //   z-index: 1;
-  //   position: absolute;
-  //   right: 0;
-  //   top: 6%;
-  //   font-family: font2;
-  //   @include dflex(flex, column, flex-start, flex-end);}
-
-  
- 
-
-    &__links {
-      width: $full-width;
-      margin: 12% auto;
-
-      a {
-        display: block;
-        text-align: center;
-        margin-bottom: 6%;
-        font-size: .8rem;
-      }
 
 
+
+
+  &__links {
+    width: $full-width;
+    margin: 12% auto;
+
+    a {
+      display: block;
+      text-align: center;
+      margin-bottom: 6%;
+      font-size: .8rem;
     }
 
-  
+
+  }
+
+
   i {
     color: $txt-color;
 
@@ -48,54 +36,68 @@
 
 
   &__header {
+    position: relative;
     @include dflex(flex, row, space-between, center);
     width: $full-width;
     padding: $txt-small;
     margin: 2rem auto;
-         
-    &__buttons{
-      display: none
-    }
-    
 
-    
-    @media(min-width:990px){
-    
-      &__buttons{
+    &__buttons {
+      display: none;
+      @media(min-width:768px) {
         @include dflex(flex, row, space-between, center);
+        width: 71%;
         color: $w-color;
         margin: 0 auto;
-        width: 56%;
-        font-size: 1.2rem;
-        font-weight: 400;
+        font-size: 1rem;
+        font-weight: 500;
         font-family: font2;
         transition: .3s;
-        a{
+
+        a {
           transition: .3s;
         }
-        a:hover{
-       transform: scale(1.2);
-       transition: .3s;
+
+        a:hover {
+          transform: scale(1.2);
+          transition: .3s;
           font-weight: 600;
         }
-        
-        
-   
       }
-   
-      
-     
+      @media(min-width:980px){
+          width: 56%;
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+
 
     }
-    @media(min-width:1330px){
-    width: 80%;
-    margin:  2rem auto;
-     
+
+
+
+
+
+
+
+
+
+
       
-     
+
+
+
+
+    
+
+    @media(min-width:1330px) {
+      width: 80%;
+      margin: 2rem auto;
+
+
+
 
     }
- 
+
 
     &__image {
       width: 80px;
@@ -104,21 +106,23 @@
     }
 
     &__navbar {
-      @media(min-width:768px){
+      @media(min-width:768px) {
         width: 10%;
       }
+
       padding: $pad-primary;
 
- 
+
       i {
         color: $txt-color;
-      
+
         cursor: pointer;
-      
+
 
       }
-      i[class="fa-solid fa-bars-staggered"]{
-        @media(min-width:768px){
+
+      .bars {
+        @media(min-width:768px) {
           display: none;
         }
       }
@@ -127,12 +131,79 @@
       width: $half-width;
 
 
-   @media(min-width:990px){
-    width: 10%;
-   }
+      @media(min-width:990px) {
+        width: 10%;
+      }
 
     }
 
+    &__menu {
+ display: none;
+      padding-top: 2rem;
+      @media(min-width:500px){
+        width: 50%;
+      }
+      position: absolute;
+    
+          width: 60%;
+          background-color: $w-color;
+          z-index: 1;
+          position: absolute;
+          right: 0;
+          top: 100%;
+          font-family: font2;
+          border-radius: 10px;
+      
+          &__links {
+            a {
+              margin-bottom: 2rem;
+            }
+      
+            width: 100%;
+            @include dflex(flex, column, space-between, center);
+      
+          }
+      
+          #reservation {
+            text-transform: uppercase;
+            background-color: $txt-color;
+            padding: 8px 16px;
+            color: $w-color;
+            border-radius: 8px;
+            margin-top: 1rem;
+            font-size: .8rem;
+            font-weight: 500;
+          }
+      
+      
+      
+      
+          &__imageBox {
+            width: 90%;
+            margin: $c-margin;
+            margin-bottom: 2rem;
+            @include dflex(flex, column, center, center);
+            gap: .5rem;
+      
+      
+            &__row {
+              @include dflex(flex, row, center, center);
+              gap: .5rem;
+      
+              div {
+                width: calc(20% - .5rem);
+      
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+      
+      
+      
+          }
+        }
   }
 
 
@@ -143,7 +214,7 @@
     margin: 0 auto;
     margin: $c-margin;
     margin-top: 15%;
-    
+
 
     &__txt1 {
 

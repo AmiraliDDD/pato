@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css"
@@ -15,6 +15,7 @@
     <link rel="icon" type="favicon" href="./assets/images/favicon.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script.js" defer></script>
     <title>Pato</title>
 </head>
 
@@ -32,20 +33,20 @@
                 <a href="#">blog</a>
                 <a href="#">contact</a>
             </div>
-            <nav class="slider__header__navbar">
+            <nav class="slider__header__navbar " >
 
 
 
 
                 <!-- <i class="fa fa-tripadvisor" style="color:white"></i> -->
-                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                <i  class="fa-brands fa-twitter " style="color: #ffffff;"></i>
                 <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-                <i class="fa-solid fa-bars-staggered" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-bars-staggered bars" style="color: #ffffff;"></i>
 
             </nav>
-            <!-- <aside class="slider__menu">
-                <i class="fa-solid fa-xmark" style="color: #000000;"></i>
-                <div class="slider__menu__links">
+            <aside id="menu" class="slider__header__menu">
+               
+                <div class="slider__header__menu__links">
                     <a href="#">Home</a>
                     <a href="#">menu</a>
                     <a href="#">gallery</a>
@@ -53,8 +54,31 @@
                     <a href="#">blog</a>
                     <a href="#">contact</a>
 
+                    <a href="#" id="reservation">reservation</a>
+
+
                 </div>
-            </aside> -->
+                <div class="slider__header__menu__imageBox">
+                    <div class="slider__header__menu__imageBox__row">
+                        <div><img src="./assets/images/imagebox/photo-gallery-01.jpg" alt=""></div>
+                        <div><img src="./assets/images/imagebox/photo-gallery-03.jpg" alt=""></div>
+                        <div><img src="./assets/images/imagebox/photo-gallery-04.jpg" alt=""></div>
+                    </div>
+                    <div class="slider__header__menu__imageBox__row">
+                        <div><img src="./assets/images/imagebox/photo-gallery-05.jpg" alt=""></div>
+                        <div><img src="./assets/images/imagebox/photo-gallery-06.jpg" alt=""></div>
+                        <div><img src="./assets/images/imagebox/photo-gallery-07.jpg" alt=""></div>
+                    </div>
+
+                    <div class="slider__header__menu__imageBox__row">
+                        <div><img src="./assets/images/imagebox/photo-gallery-09.jpg" alt=""></div>
+                        <div><img src="./assets/images/imagebox/photo-gallery-10.jpg" alt=""></div>
+                        <div><img src="./assets/images/imagebox/photo-gallery-12.jpg" alt=""></div>
+                    </div>
+
+
+                </div>
+            </aside>
         </header>
         <section class="slider__section">
             <p class="slider__section__txt1">welcome to</p>
@@ -181,7 +205,7 @@
             </div>
         </form>
         </div>
-        <div class="reservation__image" >
+        <div class="reservation__image">
             <img src="./assets/images/booking-01.jpg.webp" alt="">
         </div>
 
@@ -202,7 +226,7 @@
             <a href="#" class="news-container__card__linkSecondary">continue reading</a>
         </div>
 
-        <div class="news-container__card" data-aos="fade-up" >
+        <div class="news-container__card" data-aos="fade-up">
             <img src="./assets/images/blog-03.jpg" alt="restaurent-photo">
             <a href="#" class="news-container__card__linkPrimary">style the wedding party</a>
             <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
@@ -285,7 +309,7 @@
 
     <script>
         AOS.init();
-      </script>
+    </script>
 </body>
 
 </html>
